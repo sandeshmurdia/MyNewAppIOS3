@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { ThemeContext } from '../App';
 import axios from 'axios';  // Import Axios
 import zipy from 'zipy-react-native';
-// import zipy from 'zipyai-react-native';
+// import zipy from 'zipy-react-native';
 
 
 const ApiScreen: React.FC = () => {

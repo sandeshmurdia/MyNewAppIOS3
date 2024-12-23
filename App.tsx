@@ -45,7 +45,7 @@ const App: React.FC = () => {
     setIsDarkTheme(!isDarkTheme);
   };
 
-  const handleLogin = async (email: string, password: string, lastname: string, username: string, customerName: string ) => {
+  const handleLogin = async (email: string, password: string, lastname: string, username: string, customerName: string, product: string, newbiew: string, chart: string ) => {
     if (true) {
       setIsLoggedIn(true);
       setTimeout(() => {
@@ -53,7 +53,11 @@ const App: React.FC = () => {
           email: email,
           firstName: password,
           lastName: lastname,
-          customerName: customerName
+          customerName: customerName,
+          product: product,
+          newbiew: newbiew,
+          chart: chart,
+          'test-prop': `${chart}${newbiew}`
         });
       }, 5000);
     }

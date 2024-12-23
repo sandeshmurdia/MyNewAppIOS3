@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Animated, StyleSheet } from 'react-native';
 import zipy from 'zipy-react-native';
-// import zipy from 'zipyai-react-native';
+// import zipy from 'zipy-react-native';
 
 const LoginScreen: React.FC<{ handleLogin: (email: string, password: string, lastname: string, username: string ,customerName : string) => void }> = ({ handleLogin }) => {
   const [email, setEmail] = useState('');
@@ -9,6 +9,9 @@ const LoginScreen: React.FC<{ handleLogin: (email: string, password: string, las
   const [lastname, setLastname] = useState('');
   const [username, setUsername] = useState('');
   const [customername, setCustomername] = useState('');
+  const [product, setProduct] = useState('');
+  const [newbiew, setNewbiew] = useState('');
+  const [chart, setChart] = useState('');
 
 
   // Animation references
@@ -76,9 +79,30 @@ const LoginScreen: React.FC<{ handleLogin: (email: string, password: string, las
           value={customername}
           onChangeText={setCustomername}
         />
+                          <TextInput
+          style={styles.input}
+          placeholder="product"
+          placeholderTextColor="#95a5a6"
+          value={product}
+          onChangeText={setProduct}
+        />
+                          <TextInput
+          style={styles.input}
+          placeholder="newbiew"
+          placeholderTextColor="#95a5a6"
+          value={newbiew}
+          onChangeText={setNewbiew}
+        />
+                          <TextInput
+          style={styles.input}
+          placeholder="chart"
+          placeholderTextColor="#95a5a6"
+          value={chart}
+          onChangeText={setChart}
+        />
         <TouchableOpacity
           style={styles.button}
-          onPress={() => handleLogin(email, firstname, lastname, username, customername)}
+          onPress={() => handleLogin(email, firstname, lastname, username, customername, product, newbiew, chart)}
           activeOpacity={0.8}
         >
           <Text style={styles.buttonText}>Login</Text>

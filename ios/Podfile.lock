@@ -1192,7 +1192,7 @@ PODS:
     - Yoga
   - SocketRocket (0.7.0)
   - Yoga (0.0.0)
-  - zipyai-react-native (2.0.47-beta):
+  - zipyai-react-native (1.0.10):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1458,7 +1458,7 @@ SPEC CHECKSUMS:
   RNScreens: 6b641f232990a9d505a6d139fd18c3c759c9d290
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: 04f1db30bb810187397fa4c37dd1868a27af229c
-  zipyai-react-native: dde11b0778566e76ea083c97150651348b776dd9
+  zipyai-react-native: 30a5a860927a245d811494d9d0d5430af9f62b96
 
 PODFILE CHECKSUM: 9848c03e5555e33d83b1bf38d84d6a70fe522aef
 
